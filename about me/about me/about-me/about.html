@@ -1,0 +1,2464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head 中自定义的  -->
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>余生岁月</title>    <!-- 网站标题 -->
+    <meta content="telephone=no" name="format-detection">
+    <meta content="var(--heo-card-bg)" name="theme-color">
+    <link rel="shortcut icon"
+          href="upload/touxiang.jpg"/>
+    <script src="../lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="themes/theme-hao/assets/js/heo101f.js?v=1.3.3"></script>
+
+    <script src="themes/theme-hao/assets/js/halo101f.js?v=1.3.3"></script>
+
+    <link rel="stylesheet" href="themes/theme-hao/assets/zhheo/zhheoblog101f.css?v=1.3.3">
+
+    <link rel="stylesheet" href="themes/theme-hao/assets/zhheo/custom101f.css?v=1.3.3">
+
+    <link rel="stylesheet" href="themes/theme-hao/assets/libs/twikoo/commentBarrage101f.css?v=1.3.3">
+
+    <style>
+        *::-webkit-scrollbar-thumb {
+            background-color: var(--heo-main);
+            background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+            border-radius: 2em
+        }
+    </style>
+
+    <link media="print"
+          onload='this.media="all"'
+          rel="stylesheet"
+          href="themes/theme-hao/assets/libs/iconfont/iconfont101f.css?v=1.3.3">
+
+    <!-- swiper 在瞬间滚动时会使用 -->
+    <link rel="stylesheet" href="../lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/8.0.6/swiper-bundle.min.css"/>
+
+    <!-- 右下角通知 -->
+    <link href="../lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.css"
+          media="print"
+          onload='this.media="all"'
+          rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../cdn.staticfile.org/font-awesome/6.2.0/css/all.min.css_%3b%20filename_%3dutf-8%27%27all.min.css" media="all" onload="this.media='all'">
+
+    <!-- 代码块自动识别语言 -->
+    
+    <!-- 解决 pjax问题  自动识别语言-->
+    
+
+    <!-- 自动识别语言 -->
+    
+        <script src="themes/theme-hao/assets/libs/prism/highlight.min101f.js?v=1.3.3"></script>
+
+
+        <script>
+            document.addEventListener("pjax:complete", function () {
+                hljs.highlightAll()
+            })
+            document.addEventListener("DOMContentLoaded", function () {
+                hljs.highlightAll()
+            })
+        </script>
+
+    
+
+
+    <!--  代码块-->
+    
+    
+        <link rel="preload" as="style" onload="this.rel='stylesheet'"
+              href="themes/theme-hao/assets/libs/prism/prism.min101f.css?v=1.3.3">
+        <link rel="preload" as="style" onload="this.rel='stylesheet'"
+              href="themes/theme-hao/assets/libs/prism/code101f.css?v=1.3.3">
+        <link rel="preload" as="style" onload="this.rel='stylesheet'" data-code-theme="light"
+              href="themes/theme-hao/assets/libs/prism/themes/prism-one-light101f.css?v=1.3.3">
+        <link rel="preload" as="style" onload="this.rel='stylesheet'" data-code-theme="dark"
+              href="themes/theme-hao/assets/libs/prism/themes/prism-one-dark101f.css?v=1.3.3">
+        <script data-pjax type="text/javascript" src="themes/theme-hao/assets/libs/prism/prism.min101f.js?v=1.3.3"></script>
+
+        <style>
+
+            #article-container .code-toolbar pre.close{
+                overflow: hidden;
+                height: 300px;
+            }
+        </style>
+
+    
+
+
+    <!-- 页脚内容-样式一 -->
+
+
+       
+
+
+
+    <script>
+        (win => {
+            win.saveToLocal = {
+                set: function setWithExpiry(key, value, ttl) {
+                    if (ttl === 0) return
+                    const now = new Date()
+                    const expiryDay = ttl * 86400000
+                    const item = {
+                        value: value,
+                        expiry: now.getTime() + expiryDay,
+                    }
+                    localStorage.setItem(key, JSON.stringify(item))
+                },
+
+                get: function getWithExpiry(key) {
+                    const itemStr = localStorage.getItem(key)
+
+                    if (!itemStr) {
+                        return undefined
+                    }
+                    const item = JSON.parse(itemStr)
+                    const now = new Date()
+
+                    if (now.getTime() > item.expiry) {
+                        localStorage.removeItem(key)
+                        return undefined
+                    }
+                    return item.value
+                }
+            }
+
+            win.getScript = url => new Promise((resolve, reject) => {
+                const script = document.createElement('script')
+                script.src = url
+                script.async = true
+                script.onerror = reject
+                script.onload = script.onreadystatechange = function () {
+                    const loadState = this.readyState
+                    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                    script.onload = script.onreadystatechange = null
+                    resolve()
+                }
+                document.head.appendChild(script)
+            })
+
+            win.activateDarkMode = function () {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                heo.initThemeColor()
+            }
+            win.activateLightMode = function () {
+                document.documentElement.setAttribute('data-theme', 'light')
+                heo.initThemeColor()
+            }
+            const t = saveToLocal.get('theme')
+
+            const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+            const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+            const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+            const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+            if (t === undefined) {
+                if (isLightMode) activateLightMode()
+                else if (isDarkMode) activateDarkMode()
+                else if (isNotSpecified || hasNoSupport) {
+                    const now = new Date()
+                    const hour = now.getHours()
+                    const isNight = hour <= 6 || hour >= 18
+                    isNight ? activateDarkMode() : activateLightMode()
+                }
+                window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+                    if (saveToLocal.get('theme') === undefined) {
+                        e.matches ? activateDarkMode() : activateLightMode()
+                    }
+                })
+            } else if (t === 'light') activateLightMode()
+            else activateDarkMode()
+
+            if("system" === 'dark')
+                activateDarkMode()
+            if("system" === 'light')
+                activateLightMode()
+
+            const asideStatus = saveToLocal.get('aside-status')
+            if (asideStatus !== undefined) {
+                if (asideStatus === 'hide') {
+                    document.documentElement.classList.add('hide-aside')
+                } else {
+                    document.documentElement.classList.remove('hide-aside')
+                }
+            }
+        })(window)
+    </script>
+
+    <!-- 动态加载条 -->
+    <script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}'
+            src="themes/theme-hao/assets/libs/pace/pace.min101f.js?v=1.3.3">
+    </script>
+
+    <!-- 复制 https://github.com/zenorocha/clipboard.js -->
+    <script src="themes/theme-hao/assets/libs/clipboard/clipboard.min101f.js?v=1.3.3"></script>
+
+    <!-- 全局图片预览-->
+    <script src="../lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="../lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <!-- 关于地图-->
+    <script src="https://map.qq.com/api/gljs?v=1.exp&amp;key=YZOBZ-34HLF-K3OJV-JV6IN-OALJ5-7MBAC"></script>
+
+    <!-- 关于统计-->
+    <script src="themes/theme-hao/assets/libs/countup/countup101f.js?v=1.3.3"></script>
+
+    <!-- 小板报 -->
+    
+        <script defer src="themes/theme-hao/assets/libs/welcome/welcome101f.js?v=1.3.3"></script>
+    
+
+    <!-- 文章ai摘要 -->
+    
+
+    <!-- icon图标 -->
+    <link rel="stylesheet" href="../cdn.cbd.int/hao-theme-static%401.3.2/icon/iconfont.css">
+
+    <!-- 声明一些公共信息 -->
+    <script id="site-config">
+        var GLOBAL_CONFIG = {
+            // 页面类型 index,page,post,tag,category
+            htmlType: "links",
+            postTitle: "",
+            isanchor: true,
+            isPost: false,
+            isHome: false,
+            isHighlightShrink: false,
+            //isToc: false && document.getElementById("card-toc"),
+            postUpdate: '2022-11-04 20:08:15',
+            copyright: undefined,
+            lightbox: 'fancybox',
+            lazyload: {enable: true, error: "/themes/theme-hao/assets/images/404s.gif"},
+            isFriendLinksInFooter: true,
+            loadingBox: true,
+            loadProgressBar: true,
+            allPlaylist: "https:\/\/music.163.com\/#\/playlist?id=577629235",
+            navMusicEnable:true,
+            isMusic: false,
+            helloText: ["\uD83E\uDD16\uFE0F \u6570\u7801\u79D1\u6280\u7231\u597D\u8005"," \uD83D\uDD0D \u5206\u4EAB\u4E0E\u70ED\u5FC3\u5E2E\u52A9"," \uD83C\uDFE0 \u667A\u80FD\u5BB6\u5C45\u5C0F\u80FD\u624B"," \uD83D\uDD28 \u8BBE\u8BA1\u5F00\u53D1\u4E00\u6761\u9F99"," \uD83E\uDD1D \u4E13\u4FEE\u4EA4\u4E92\u4E0E\u8BBE\u8BA1"," \uD83C\uDFC3 \u811A\u8E0F\u5B9E\u5730\u884C\u52A8\u6D3E"," \uD83E\uDDF1 \u56E2\u961F\u5C0F\u7EC4\u53D1\u52A8\u673A"," \uD83D\uDCA2 \u58EE\u6C49\u4EBA\u72E0\u8BDD\u4E0D\u591A"],
+            assetsLink: "\/themes\/theme-hao\/assets",
+            profileStyle: "one",
+            rightMenuEnable: true,
+            source: {
+                links: {
+                    linksUrl: "\/links",
+                    linksData: [],
+                    linksNum: 3,
+                },
+                jQuery: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js',
+                justifiedGallery: {
+                    js: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+                    css: 'https://npm.elemecdn.com/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+                },
+                fancybox: {
+                    js: 'https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.js',
+                    css: 'https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/fancybox/3.5.7/jquery.fancybox.min.css'
+                },
+                twikoo:{
+                    js: "\/themes\/theme-hao\/assets"+'/libs/twikoo/twikoo.all.min.js' + "?v=1.3.3",
+                    maxBarrage: 1,
+                    barrageTime: 4000,
+                    twikooUrl: "",
+                    accessToken: "76ad6c22297ef269193eeccf7252c028",
+                    mailMd5: "FB700D7B3DB36AC8",
+                },
+                welcome:{
+                    key:"PKFBZ-J7BRC-UUH24-AURZP-34KWS-3RFOM",
+                    locationLng: "121.367624",
+                    locationLat: "31.32909",
+                },
+                post:{
+                    dynamicBackground: true
+                },
+                tool:{
+                    switch: true
+                }
+            },
+            date_suffix: {
+                just: '刚刚',
+                min: '分钟前',
+                hour: '小时前',
+                day: '天前',
+                month: '个月前'
+            },
+            Snackbar: {
+                chs_to_cht: "你已切换为繁体",
+                cht_to_chs: "你已切换为简体",
+                day_to_night: "你已切换为深色模式",
+                night_to_day: "你已切换为浅色模式",
+                bgLight: "#425aef",
+                bgDark: "#f2b94b",
+                position: "top-center",
+            },
+            prism: {
+                enable: true,
+                enable_title: true,
+                enable_hr: true,
+                enable_line: true,
+                enable_copy: true,
+                enable_expander: true,
+                prism_limit: Number(300)+30,
+                enable_height_limit: true
+            },
+
+
+        };
+
+        // 根据htmlType设置页面title
+        setTitle = () => {
+            
+            }
+            if (title != '')
+                document.title = title + ' - ' + "Roozen\u7684\u5C0F\u7834\u7AD9"
+        
+
+        (() => {
+            setTitle()
+        })()
+
+
+
+    </script>
+
+
+    <script data-pjax>
+        var groupData = [{"metadata":{"generateName":null,"finalizers":null,"name":"ungrouped","labels":null,"annotations":null,"version":null,"creationTimestamp":null,"deletionTimestamp":null},"spec":{"displayName":"","priority":0,"links":null},"links":[]},{"metadata":{"generateName":"link-group-","finalizers":null,"name":"link-group-ANgJP","labels":null,"annotations":{"displayStyle":"default","description":""},"version":8,"creationTimestamp":"2023-07-29T03:39:38.122370216Z","deletionTimestamp":null},"spec":{"displayName":"\u7CBE\u9009","priority":0,"links":[]},"links":[{"metadata":{"generateName":"link-","finalizers":null,"name":"link-AQiyO","labels":null,"annotations":{"siteshot":"\/upload\/aust.png","label":"\u6211\u7684\u5927\u5B66","labelColor":"#ff0000"},"version":8,"creationTimestamp":"2023-07-29T03:42:02.748126746Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.aust.edu.cn","displayName":"\u5B89\u5FBD\u7406\u5DE5\u5927\u5B66","logo":"\/upload\/aust.png","description":"\u56E2\u7ED3\u3001\u594B\u8FDB\u3001\u535A\u5B66\u3001\u5949\u732E","priority":0,"groupName":"link-group-ANgJP"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-Capdr","labels":null,"annotations":{"siteshot":"\/upload\/halo.webp","label":"Halo","labelColor":"#425AEF"},"version":8,"creationTimestamp":"2023-07-29T03:45:58.213165192Z","deletionTimestamp":null},"spec":{"url":"https:\/\/halo.run\/","displayName":"Halo\u5EFA\u7AD9","logo":"\/upload\/halo.webp","description":"\u5F3A\u5927\u6613\u7528\u7684\u5F00\u6E90\u5EFA\u7AD9\u5DE5\u5177","priority":1,"groupName":"link-group-ANgJP"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-QJYTj","labels":null,"annotations":{"label":"\u6211\u5F00\u6E90\u7684","siteshot":"\/upload\/ObsidianestLogo-hex_hecqbw.png","labelColor":"#f04242"},"version":7,"creationTimestamp":"2023-08-14T02:47:24.685334943Z","deletionTimestamp":null},"spec":{"url":"https:\/\/\/?preview-theme=theme-aurora","displayName":"Aurora\u4E3B\u9898","logo":"\/upload\/ObsidianestLogo-hex_hecqbw.png","description":"Halo\u7248\u672C\u7684Aurora\u4E3B\u9898","priority":2,"groupName":"link-group-ANgJP"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-wZepB","labels":null,"annotations":{"siteshot":"https:\/\/liuzhihang.com\/themes\/theme-hao\/assets\/images\/hao-logo.jpg","label":"\u6211\u53C2\u4E0E\u7684","labelColor":"#ff0000"},"version":12,"creationTimestamp":"2023-07-29T03:47:49.719537745Z","deletionTimestamp":null},"spec":{"url":"https:\/\/github.com\/liuzhihang\/halo-theme-hao","displayName":"Hao","logo":"https:\/\/liuzhihang.com\/themes\/theme-hao\/assets\/images\/hao-logo.jpg","description":"\u79FB\u690D\u81EA Hexo \u793E\u533A\u4E2D \u5F20\u6D2A Heo \u5BF9 Hexo-Theme-Butterfly \u4E3B\u9898\u7684\u9B54\u6539\u7248\u672C\u3002","priority":3,"groupName":"link-group-ANgJP"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-ouipJ","labels":null,"annotations":{"label":"\u6211\u53C2\u4E0E\u7684","siteshot":"https:\/\/0206.ink\/upload\/cf44650dc27ca55b28bb0f8d3e48a93.png","labelColor":"#ff0000"},"version":1,"creationTimestamp":"2023-08-16T16:29:55.457095766Z","deletionTimestamp":null},"spec":{"url":"","displayName":"TimePlus","logo":"https:\/\/0206.ink\/upload\/cf44650dc27ca55b28bb0f8d3e48a93.png","description":"Halo2.8\u4E3B\u9898-\u65F6\u5149\u76F8\u518C","priority":4,"groupName":"link-group-ANgJP"}}]},{"metadata":{"generateName":"link-group-","finalizers":null,"name":"link-group-NUHNR","labels":null,"annotations":{"displayStyle":"beautify","description":""},"version":7,"creationTimestamp":"2023-07-10T03:20:28.010702193Z","deletionTimestamp":null},"spec":{"displayName":"\u63A8\u8350\u535A\u5BA2","priority":1,"links":[]},"links":[{"metadata":{"generateName":"link-","finalizers":null,"name":"link-CEsfN","labels":null,"annotations":{"siteshot":"https:\/\/0206.ink\/upload\/645fac04e203a.jpeg","label":"Hao","labelColor":"#ff0000"},"version":8,"creationTimestamp":"2023-07-09T14:43:06.748690198Z","deletionTimestamp":null},"spec":{"url":"https:\/\/0206.ink\/","displayName":"\u56F0\u56F0\u9C7C","logo":"https:\/\/0206.ink\/upload\/645fac04e203a.jpeg","description":"\u559C\u6B22\u6363\u9F13\u7684\u535A\u4E3B","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-KTpWa","labels":null,"annotations":{"siteshot":"https:\/\/blog.sunguoqi.com\/upload\/avatar.png","label":"Hao","labelColor":"#ff0000"},"version":1,"creationTimestamp":"2023-07-21T16:43:39.413465675Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.sunguoqi.com","displayName":"\u5C0F\u5B59\u540C\u5B66","logo":"https:\/\/blog.sunguoqi.com\/upload\/avatar.png","description":"\u8DEF\u867D\u8FDC\u884C\u5219\u5C06\u81F3\uFF0C\u4E8B\u867D\u96BE\u505A\u5219\u5FC5\u6210\uFF01","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-lxHPo","labels":null,"annotations":{"siteshot":"https:\/\/shyblog.oss-cn-beijing.aliyuncs.com\/img\/%E5%BE%AE%E4%BF%A1%E5%A4%B4%E5%83%8F.jpg","label":"Hao","labelColor":"#ff0000"},"version":3,"creationTimestamp":"2023-07-21T16:51:26.915802780Z","deletionTimestamp":null},"spec":{"url":"https:\/\/shyblog.world\/","displayName":"\u6D41\u6B83","logo":"https:\/\/shyblog.oss-cn-beijing.aliyuncs.com\/img\/%E5%BE%AE%E4%BF%A1%E5%A4%B4%E5%83%8F.jpg","description":"\u6D41\u6B83","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-GTquq","labels":null,"annotations":{"siteshot":"https:\/\/blog.kouseki.cn\/imgs\/avatar.webp","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-25T01:57:33.567940998Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.kouseki.cn\/","displayName":"\u94ED\u5FC3\u77F3\u523B","logo":"https:\/\/blog.kouseki.cn\/imgs\/avatar.webp","description":"\u613F\u5C81\u5E76\u8C22\uFF0C\u4E0E\u53CB\u957F\u516E","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-ThCRj","labels":null,"annotations":{"siteshot":"https:\/\/npm.elemecdn.com\/anzhiyu-blog-static@1.0.4\/img\/avatar.jpg","label":"\u6280\u672F","labelColor":"#ff0000"},"version":3,"creationTimestamp":"2023-07-25T11:10:52.569053575Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.anheyu.com\/","displayName":"\u5B89\u77E5\u9C7C","logo":"https:\/\/npm.elemecdn.com\/anzhiyu-blog-static@1.0.4\/img\/avatar.jpg","description":"\u751F\u6D3B\u660E\u6717\uFF0C\u4E07\u7269\u53EF\u7231","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-edanB","labels":null,"annotations":{"siteshot":"https:\/\/bu.dusays.com\/2022\/12\/28\/63ac2812183aa.png","label":"\u6280\u672F","labelColor":"#ff0000"},"version":4,"creationTimestamp":"2023-07-25T11:12:04.432730178Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.zhheo.com\/","displayName":"\u5F20\u6D2AHeo","logo":"https:\/\/bu.dusays.com\/2022\/12\/28\/63ac2812183aa.png","description":"\u5206\u4EAB\u8BBE\u8BA1\u4E0E\u79D1\u6280\u751F\u6D3B","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-iXneN","labels":null,"annotations":{"siteshot":"https:\/\/npm.elemecdn.com\/akilar-friends@latest\/avatar\/akilar.top.jpg","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-25T11:18:55.808477460Z","deletionTimestamp":null},"spec":{"url":" https:\/\/akilar.top\/","displayName":"Akilar\u306E\u7CD6\u679C\u5C4B","logo":"https:\/\/npm.elemecdn.com\/akilar-friends@latest\/avatar\/akilar.top.jpg","description":" \u671F\u5F85\u60A8\u7684\u5149\u4E34\uFF01","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-vEZBd","labels":null,"annotations":{"siteshot":"https:\/\/s1.ax1x.com\/2022\/11\/10\/z9E7X4.jpg","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-26T07:00:51.912546045Z","deletionTimestamp":null},"spec":{"url":"https:\/\/poetize.cn","displayName":"\u751F\u6D3B\u5012\u5F71","logo":"https:\/\/s1.ax1x.com\/2022\/11\/10\/z9E7X4.jpg","description":"\u8FD9\u662F\u4E00\u4E2A Vue2 Vue3 \u4E0E SpringBoot \u7ED3\u5408\u7684\u4EA7\u7269\uFF5E","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-yHAtp","labels":null,"annotations":{"siteshot":"https:\/\/www.images.xiaozhangstu.com\/i\/2023\/07\/15\/64b2555630746.jpg","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":4,"creationTimestamp":"2023-07-26T08:01:06.699829727Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.blog.xiaozhangstu.com","displayName":"\u5C0F\u5F20\u540C\u5B66","logo":"https:\/\/www.images.xiaozhangstu.com\/i\/2023\/07\/15\/64b2555630746.jpg","description":"\u5C0F\u5F20\u7684\u8FDB\u6B65\u8BB0\u5F55","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-NXXcZ","labels":null,"annotations":{"siteshot":"https:\/\/www.mmbkz.cn\/logo","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-26T08:24:53.321264487Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.mmbkz.cn","displayName":"\u706B\u55B5\u9171","logo":"https:\/\/www.mmbkz.cn\/logo","description":"\u4E16\u4EBA\u7686\u840C\uFF0C\u552F\u6211\u72EC\u5E05\uFF01","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-vuOgo","labels":null,"annotations":{"siteshot":"https:\/\/bu.dusays.com\/2023\/07\/10\/64abbf448d530.jpg","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-26T08:55:40.256355993Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.hydsb0.com","displayName":"\u63A2\u4EBA\u95F4","logo":"https:\/\/bu.dusays.com\/2023\/07\/10\/64abbf448d530.jpg","description":"\u52AA\u529B\u5403\u4E0A\u66F4\u8D35\u7684\u96EA\u7CD5\uFF01","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-lMMLu","labels":null,"annotations":{"siteshot":"https:\/\/blog.4t.pw\/img\/favicon.webp","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-26T09:02:52.030290266Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.4t.pw\/","displayName":"\u6015\u51B7\u7231\u4E0A\u96EA","logo":"https:\/\/blog.4t.pw\/img\/favicon.webp","description":"\u5343\u91CC\u4E4B\u884C\uFF0C\u59CB\u4E8E\u8DB3\u4E0B\u3002","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-ktIhf","labels":null,"annotations":{"siteshot":"https:\/\/www.fomal.cc\/assets\/avatar.webp","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-26T17:26:42.285713738Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.fomal.cc\/","displayName":"Fomalhaut\uD83E\uDD5D","logo":"https:\/\/www.fomal.cc\/assets\/avatar.webp","description":"Future is now \uD83C\uDF6D\uD83C\uDF6D\uD83C\uDF6D","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-vJuPv","labels":null,"annotations":{"siteshot":"https:\/\/blog.guole.fun\/img\/gl.jpg","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-26T17:30:24.235827877Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.guole.fun\/","displayName":"Guo Le's Blog","logo":"https:\/\/blog.guole.fun\/img\/gl.jpg","description":"\u751F\u547D\u662F\u72EC\u7ACB\u662F\u81EA\u7531\u662F\u7231\u4E0E\u548C\u5E73","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-qsIvK","labels":null,"annotations":{"siteshot":"https:\/\/haiyong.site\/img\/favicon.png","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-26T17:32:57.671258854Z","deletionTimestamp":null},"spec":{"url":"https:\/\/haiyong.site","displayName":"\u6D77\u62E5","logo":"https:\/\/haiyong.site\/img\/favicon.png","description":"\u4E00\u4E2A\u4E50\u4E8E\u5206\u4EAB\u6280\u672F\u4E0E\u5FEB\u4E50\u7684\u535A\u4E3B","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-RydNS","labels":null,"annotations":{"siteshot":"https:\/\/q1.qlogo.cn\/g?b=qq\u0026nk=990320751\u0026s=5","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-27T04:01:19.819062477Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.leonus.cn\/","displayName":"Leonus","logo":"https:\/\/q1.qlogo.cn\/g?b=qq\u0026nk=990320751\u0026s=5","description":"\u8FDB\u4E00\u5BF8\u6709\u8FDB\u4E00\u5BF8\u7684\u6B22\u559C\u3002","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-iAeYt","labels":null,"annotations":{"siteshot":"https:\/\/cdn.dusays.com\/avatar.png","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-27T04:28:51.843909743Z","deletionTimestamp":null},"spec":{"url":"https:\/\/dusays.com","displayName":"\u675C\u8001\u5E08\u8BF4","logo":"https:\/\/cdn.dusays.com\/avatar.png","description":"\u675C\u8001\u5E08\u8BF4","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-Esxbm","labels":null,"annotations":{"siteshot":"https:\/\/std.thyuu.com\/logo.webp","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-27T04:32:33.634641079Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.thyuu.com","displayName":"\u98CE\u8BB0\u661F\u8FB0","logo":"https:\/\/std.thyuu.com\/logo.webp","description":"\u70ED\u7231\u4F60\u6765\u8FC7\u7684\u6BCF\u4E00\u4EFD\u6E29\u5EA6","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-sVjJw","labels":null,"annotations":{"siteshot":"https:\/\/img.easyf12.top\/images\/2022\/10\/15\/634a8b4186889.webp","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-27T04:37:45.790279404Z","deletionTimestamp":null},"spec":{"url":"https:\/\/easyf12.top\/","displayName":"\u4E00\u84D1\u70DF\u96E8\u7684\u535A\u5BA2","logo":"https:\/\/img.easyf12.top\/images\/2022\/10\/15\/634a8b4186889.webp","description":"\u7AF9\u6756\u8292\u978B\u8F7B\u80DC\u9A6C\uFF0C\u8C01\u6015\uFF1F\u4E00\u84D1\u70DF\u96E8\u4EFB\u5E73\u751F\u3002","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-CbaAO","labels":null,"annotations":{"siteshot":"https:\/\/gao.ee\/gugu","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-29T02:46:04.291207362Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.laoda.de","displayName":"\u6211\u4E0D\u662F\u5495\u5495\u9E3D","logo":"https:\/\/gao.ee\/gugu","description":"\u670D\u52A1\u5668\u6298\u817E\u4E0D\u5B8C\u5168\u6307\u5357\uFF0C\u5B9A\u671F\u5206\u4EAB\u4E00\u4E9B\u597D\u73A9\u7684\u4E1C\u897F\uFF0C\u4E0D\u5B9A\u671F\u8BB0\u5F55\u751F\u6D3B\u3002","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-bwRJj","labels":null,"annotations":{"siteshot":"https:\/\/gao.ee\/gugu","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-07-29T02:54:41.434925715Z","deletionTimestamp":null},"spec":{"url":"https:\/\/iwanlab.com\/","displayName":"\u7231\u73A9\u5B9E\u9A8C\u5BA4","logo":"https:\/\/gao.ee\/gugu","description":"\u5B9A\u671F\u5206\u4EAB\u4E00\u4E9B\u597D\u73A9\u7684\u4E1C\u897F\uFF0C\u5305\u62EC\u4F46\u4E0D\u5C40\u9650\u4E8E\u670D\u52A1\u5668\u3001Web3\u7B49\u76F8\u5173\u77E5\u8BC6\u3002","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-OaNJp","labels":null,"annotations":{"siteshot":"https:\/\/s1.ax1x.com\/2022\/11\/21\/zQeyKf.png","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":3,"creationTimestamp":"2023-07-29T03:37:53.098333702Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.manyacan.com\/","displayName":"\u4E9A\u707F\u7F51\u5FD7","logo":"https:\/\/s1.ax1x.com\/2022\/11\/21\/zQeyKf.png","description":"Yacan's Blog","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-gDtoz","labels":null,"annotations":{"siteshot":"https:\/\/avatar.qjqq.cn\/1\/647571edf20a9.webp!avatar","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":1,"creationTimestamp":"2023-07-29T12:15:23.941352535Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.qjqq.cn\/","displayName":"\u9752\u6854\u6C14\u7403","logo":"https:\/\/avatar.qjqq.cn\/1\/646cdb372913c.webp!avatar","description":"\u5206\u4EAB\u7F51\u7EDC\u5B89\u5168\u4E0E\u79D1\u6280\u751F\u6D3B","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-XFaOG","labels":null,"annotations":{"siteshot":"https:\/\/bu.dusays.com\/2023\/01\/04\/63b5663b9c22e.png","label":"\u63A8\u8350","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-08-01T07:05:23.342776759Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.roydon.top","displayName":"roydon","logo":"https:\/\/gcore.jsdelivr.net\/gh\/roydonGuo\/CDN@latest\/avatar\/ganyu.webp","description":"\u4EBA\u8981\u8D70\u591A\u5C11\u8DEF\u624D\u80FD\u5728\u65F6\u5149\u7684\u5C3D\u5934\u627E\u5BFB\u5230\u771F\u6B63\u7684\u81EA\u5DF1","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-alMSp","labels":null,"annotations":{"siteshot":"https:\/\/thirdqq.qlogo.cn\/g?b=sdk\u0026k=ddX0PpYiadKp6OTb1BeXYJA\u0026kti=ZENbbAAAAAE\u0026s=140\u0026t=1676618695","label":"Hexo","labelColor":"#425AEF"},"version":2,"creationTimestamp":"2023-08-09T04:13:02.886438194Z","deletionTimestamp":null},"spec":{"url":"https:\/\/demo.wxz666.icu\/","displayName":"\u738B\u540C\u5B66\u0026Blog","logo":"https:\/\/thirdqq.qlogo.cn\/g?b=sdk\u0026k=ddX0PpYiadKp6OTb1BeXYJA\u0026kti=ZENbbAAAAAE\u0026s=140\u0026t=1676618695","description":"\u987B\u77E5\u5C11\u65F6\u51CC\u4E91\u5FD7\uFF0C\u66FE\u8BB8\u4EBA\u95F4\u7B2C\u4E00\u6D41","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-arusP","labels":null,"annotations":{"label":"\u63A8\u8350","siteshot":"https:\/\/img01.anheyu.com\/useruploads\/8\/2023\/08\/09\/64d307c2d8873.png","labelColor":"#425AEF"},"version":0,"creationTimestamp":"2023-08-10T08:17:46.346659515Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.marcus233.top","displayName":"Marcus","logo":"https:\/\/img01.anheyu.com\/useruploads\/8\/2023\/08\/09\/64d307c2d8873.png","description":"\u4EBA\u95F4\u503C\u5F97\uFF0C\u672A\u6765\u53EF\u671F","priority":null,"groupName":"link-group-NUHNR"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-LQIxo","labels":null,"annotations":{"label":"Joe3.0","siteshot":"https:\/\/www.jiewen.run\/upload\/jiewen_icon.png ","labelColor":"#f04242"},"version":0,"creationTimestamp":"2023-08-14T02:45:55.890690761Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.jiewen.run\/","displayName":"Jiewen'blog","logo":"https:\/\/www.jiewen.run\/upload\/jiewen_icon.png ","description":"\u884C\u52A8\u8D77\u6765\uFF0C\u6D3B\u5728\u5F53\u4E0B","priority":null,"groupName":"link-group-NUHNR"}}]},{"metadata":{"generateName":"link-group-","finalizers":null,"name":"link-group-oyaWc","labels":null,"annotations":{"displayStyle":"default","description":""},"version":7,"creationTimestamp":"2023-07-26T02:27:11.335049670Z","deletionTimestamp":null},"spec":{"displayName":"\u5728\u7EBF","priority":2,"links":[]},"links":[{"metadata":{"generateName":"link-","finalizers":null,"name":"link-iegjc","labels":null,"annotations":{"siteshot":"https:\/\/ffbf.top\/upload\/logo3.jpeg","label":"\u5728\u7EBF","labelColor":"#1eff00"},"version":1,"creationTimestamp":"2023-07-26T02:27:55.257167911Z","deletionTimestamp":null},"spec":{"url":"https:\/\/ffbf.top","displayName":"\u798F\u798F\u4E0D\u670D","logo":"https:\/\/ffbf.top\/upload\/logo3.jpeg","description":"\u4E0D\u670D\u5C31\u662F\u4E0D\u670D","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-ZUzGd","labels":null,"annotations":{"siteshot":"http:\/\/blog.cnkj.site\/upload\/logo.png","label":"\u5728\u7EBF","labelColor":"#00ff2a"},"version":1,"creationTimestamp":"2023-07-28T07:42:32.934279748Z","deletionTimestamp":null},"spec":{"url":"http:\/\/blog.cnkj.site","displayName":"Carol","logo":"http:\/\/blog.cnkj.site\/upload\/logo.png","description":"\u53EA\u60F3\u4E13\u5FC3\u73A9NAS","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-BiSYg","labels":null,"annotations":{"siteshot":"https:\/\/anorange.icu\/upload\/headjpg.jpg","label":"\u5728\u7EBF","labelColor":"#37ff00"},"version":1,"creationTimestamp":"2023-07-28T07:52:51.769691762Z","deletionTimestamp":null},"spec":{"url":"https:\/\/anorange.icu","displayName":"\u5C0F\u6A59\u5B50","logo":"https:\/\/anorange.icu\/upload\/headjpg.jpg","description":"\u65E5\u843D\u5F52\u5C71\u6D77\uFF0C\u5C71\u6D77\u85CF\u6DF1\u610F\u3002","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-BIrow","labels":null,"annotations":{"siteshot":"https:\/\/bbchin.com\/logo","label":"\u5728\u7EBF","labelColor":"#00ff04"},"version":1,"creationTimestamp":"2023-07-29T03:27:24.463634819Z","deletionTimestamp":null},"spec":{"url":"https:\/\/bbchin.com","displayName":"M\u9177\u7684\u524D\u7AEFBlog","logo":"https:\/\/bbchin.com\/logo","description":"\u4E00\u4E2A\u4E13\u6CE8\u5206\u4EAB\u524D\u7AEF\u6280\u672F\u548C\u8D8B\u52BF\u7684\u535A\u5BA2","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-FGiTJ","labels":null,"annotations":{"label":"\u5728\u7EBF","siteshot":"https:\/\/blog.zxcxs.cc\/upload\/logo.png","labelColor":"#425AEF"},"version":0,"creationTimestamp":"2023-08-04T04:38:58.913422479Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.zxcxs.cc","displayName":"\u8427\u8427","logo":"https:\/\/blog.zxcxs.cc\/upload\/logo.png","description":"\u4E00\u5E0C\u82E5\u5B58\uFF0C\u5E0C\u671B\u4E0D\u706D\u3002","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-EQRYC","labels":null,"annotations":{"label":"Hexo","siteshot":"https:\/\/bu.dusays.com\/2023\/07\/23\/64bd27fa23a42.webp","labelColor":"#425AEF"},"version":0,"creationTimestamp":"2023-08-09T08:43:17.613130983Z","deletionTimestamp":null},"spec":{"url":"https:\/\/blog.xiowo.net\/","displayName":"Mo\u7684\u8BB0\u4E8B\u7C3F","logo":"https:\/\/bu.dusays.com\/2023\/07\/22\/64bb7a6a7ddf8.png","description":"\u4E07\u5E74\u9E3D\u738B\uFF0C\u54C8\u54C8OvO","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-lufmp","labels":null,"annotations":{"label":"\u5728\u7EBF","siteshot":"https:\/\/bu.dusays.com\/2023\/07\/30\/64c663db9c098.jpg","labelColor":"#42f057"},"version":0,"creationTimestamp":"2023-08-12T04:01:55.101316905Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.dalechu.life\/","displayName":"Dale","logo":"https:\/\/bu.dusays.com\/2023\/07\/30\/64c663db9c098.jpg","description":"Wir Werden Wissen ! Wir Werden Wissen !","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-oOvMD","labels":null,"annotations":{"label":"\u5728\u7EBF","siteshot":"https:\/\/static.sakura520.co\/config\/4cf0a0ba668d5195007ec1b4c902f500.png","labelColor":"#42f08d"},"version":0,"creationTimestamp":"2023-08-12T13:16:55.793772697Z","deletionTimestamp":null},"spec":{"url":"https:\/\/sakura520.co\/","displayName":"Vinson","logo":"https:\/\/static.sakura520.co\/config\/4cf0a0ba668d5195007ec1b4c902f500.png","description":"\u68A6\u60F3\u662F\u4E00\u4E2A\u5929\u771F\u7684\u8BCD\uFF0C\u5B9E\u73B0\u68A6\u60F3\u662F\u4E00\u4E2A\u6B8B\u9177\u7684\u8BCD","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-NJaVr","labels":null,"annotations":{"siteshot":"https:\/\/picss.sunbangyan.cn\/2023\/08\/15\/xix9xc.png","label":"\u5728\u7EBF","labelColor":"#42f05f"},"version":2,"creationTimestamp":"2023-08-15T14:35:44.871071753Z","deletionTimestamp":null},"spec":{"url":"https:\/\/duangstar.com","displayName":"Mask","logo":"https:\/\/picss.sunbangyan.cn\/2023\/08\/15\/xix9xc.png","description":"\u8FD9\u662F\u4E00\u4E2A\u809A\u5B50\u5927\u7684\u53EF\u4EE5DUANGDUANG\u54CD\u7684\u661F\u7403\u3002","priority":null,"groupName":"link-group-oyaWc"}},{"metadata":{"generateName":"link-","finalizers":null,"name":"link-SrkUt","labels":null,"annotations":{"label":"\u5728\u7EBF","siteshot":"https:\/\/www.tlbcc.cc\/upload\/%E5%95%8A%E5%95%8A%E7%8C%AB.png","labelColor":"#71f042"},"version":0,"creationTimestamp":"2023-08-22T11:02:52.107359431Z","deletionTimestamp":null},"spec":{"url":"https:\/\/www.tlbcc.cc\/","displayName":"TLBCC","logo":"https:\/\/www.tlbcc.cc\/upload\/%E5%95%8A%E5%95%8A%E7%8C%AB.png","description":"Java\u7A0B\u5E8F\u5458\u7684\u7ECF\u9A8C\u5206\u4EAB","priority":null,"groupName":"link-group-oyaWc"}}]}]
+        if (groupData.length > 0) {
+            GLOBAL_CONFIG.source.links.linksData = groupData.flatMap((item) => {
+                return item.links
+            })
+        }
+    </script>
+
+
+
+<meta name="keywords" content="余生岁月Life" />
+<meta name="description" content="余生岁月Life" />
+<style>
+  :root {
+    --default-cursor: url(upload/default.cur);
+    --pointer-cursor: url(upload/pointer.cur);
+  }
+img.footer_mini_logo {
+    border-radius: 50%;
+}
+
+  <!-- 搜索框样式 -->
+.modal-wrapper .modal-content {
+    top: 5rem;
+    border-radius: 12px !important;
+    box-shadow: var(--heo-shadow-lightblack);
+    background: var(--heo-card-bg);
+    border: var(--style-border);
+    transition: 0.3s;
+}
+
+  <!-- 404图片样式 -->
+.modal-wrapper .modal-content:hover {
+  border: var(--style-border-hover);
+  box-shadow: var(--heo-shadow-theme);
+}  
+
+  
+#error-wrap .error-content .error-img {
+  background-color: #ffffff;
+}
+
+
+/* 鼠标样式 */
+html {
+  cursor: var(--default-cursor, default), default !important;
+}
+
+body {
+  cursor: var(--default-cursor, default), default !important;
+}
+
+#recent-posts>.recent-post-item>.recent-post-info>.article-meta-wrap>.post-meta-date {
+  cursor: var(--default-cursor, default), default !important;
+}
+
+ul::before,
+li::before {
+  cursor: var(--default-cursor, default), default !important;
+}
+
+#pagination span {
+  cursor: var(--default-cursor, default), default !important;
+}
+
+a,
+img,
+button,
+svg,
+canvas,
+select {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+i.scroll-down-effects {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+.reward-button {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+#pagination a {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+/* 图片预览 */
+.fancybox,
+.fancybox-button,
+.fancybox-content,
+.fancybox__caption,
+.fancybox__viewport,
+.fancybox__slide .fancybox__content,
+.fancybox__thumbs .carousel__slide,
+.fancybox__carousel.is-draggable .fancybox__slide,
+.fancybox__carousel.is-draggable .fancybox__slide .fancybox__content {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+/* 代码块 */
+#article-container figure.highlight .highlight-tools .expand~.copy-button,
+#article-container figure.highlight .highlight-tools .expand,
+#article-container .code-expand-btn {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+/* 评论与回复 */
+.switch-btn,
+.vcol *,
+.v[data-class=v] .vicon,
+.v[data-class=v] .vbtn,
+.vat,
+.vemojis *,
+.vcontent.expand {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+/* twikoo */
+.tk-action-icon,
+.tk-panel .tk-tab,
+.tk-expand,
+.tk-pagination-pager,
+.OwO .OwO-body,
+.OwO .OwO-body .OwO-items .OwO-item,
+.OwO .OwO-body .OwO-bar .OwO-packages li {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+/* 文章轮播 */
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: var(--pointer-cursor), pointer !important;
+}
+
+#rightmenu .rightmenu-group .rightmenu-item {
+  cursor: var(--pointer-cursor), pointer !important;
+}  
+/* 鼠标样式 */
+
+.todayCard-title{
+  color: #00eee7;
+}
+</style>
+              <meta name="baidu-site-verification" content="codeva-YN0ps5nfeu">
+              <meta name="msvalidate.01" content="47F04C3B41468980CA8575285208350F">
+<!-- PluginSearchWidget start -->
+<script src="plugins/PluginSearchWidget/assets/static/search-widget.iife.js" async></script>
+<!-- PluginSearchWidget end -->
+<link rel="icon" href="upload/touxiang.jpg" />
+</head>
+
+<body>
+
+<!-- loading 页面 -->
+<div id="loading-box" onclick="heo.hideLoading()">
+
+
+    <style type="text/css">
+
+        #loading-box .loading-image-dot {
+            width: 30px;
+            height: 30px;
+            background: #6bdf8f;
+            position: absolute;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(18px, 24px);
+            -moz-transform: translate(18px, 24px);
+            -o-transform: translate(18px, 24px);
+            -ms-transform: translate(18px, 24px);
+            transform: translate(18px, 24px);
+        }
+
+        #loading-box {
+            -webkit-user-select: none;
+        }
+
+        #loading-box .loading-bg {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background: var(--heo-background);
+            z-index: 1999;
+            opacity: 1;
+            transition: 0.2s;
+            pointer-events: all;
+            animation: showLoading 0.3s 0s backwards;
+        }
+
+        #loading-box.loaded .loading-bg {
+            pointer-events: none;
+            transition: 0.2s;
+            animation: hideLoading 0.3s 0s forwards;
+        }
+
+        #loading-box .loading-img {
+            width: 100px;
+            margin: auto;
+            animation-duration: 0.2s;
+            animation-name: loadingAction;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes loadingAction {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0.6;
+            }
+        }
+
+        @keyframes hideLoading {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes showLoading {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <div class="loading-bg">
+        <img class="loading-img" style="border-radius: 50%;" src="upload/Comet.png">
+        <div class="loading-image-dot"></div>
+    </div>
+
+    <script>
+
+        var preloader = {
+            endLoading: () => {
+                //- document.body.style.overflow = 'auto';
+                document.getElementById('loading-box').classList.add("loaded")
+            },
+            initLoading: () => {
+                //- document.body.style.overflow = '';
+                document.getElementById('loading-box').classList.remove("loaded")
+            }
+        }
+        window.addEventListener('load', preloader.endLoading())
+        setTimeout(function () {
+            preloader.endLoading();
+        }, 3000)
+
+    </script>
+
+</div>
+
+<!-- 网站背景 -->
+<div id="web_bg"></div>
+
+<!-- 网站背景 -->
+<div id="an_music_bg"></div>
+
+<!-- 控制台 -->
+<div id="console">
+  <div class="close-btn" onclick="heo.hideConsole()" href="javascript:void(0);">
+    <i class="haofont hao-icon-circle-xmark"></i>
+  </div>
+  <div class="console-card-group">
+    <!-- 评论，需要使用评论插件，获取最近评论 -->
+    <div class="console-card-group-left">
+      <div class="console-card" id="card-newest-comments" onclick="heo.hideConsole()">
+        <div class="card-content">
+          <div class="author-content-item-tips">互动</div>
+          <span class="author-content-item-title">最近评论</span>
+        </div>
+        <div class="aside-list">
+          
+          <span>正在加载中...</span></div>
+      </div>
+    </div>
+    <!-- 右侧展示 tag -->
+    <div class="console-card-group-right">
+      <div class="console-card tags" onclick="heo.hideConsole()">
+        <div class="card-content">
+          <div class="author-content-item-tips">标签</div>
+          <span class="author-content-item-title">寻找感兴趣的领域</span>
+        </div>
+        <div class="card-tag-cloud">
+          <a style="font-size:1em;color:#d3d3d3"
+             href="tags/docker.html">
+            docker<sup>1</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/shi-ci-wen-ji.html">
+            诗词文集<sup>17</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/robocup.html">
+            RoboCup<sup>2</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/jiao-cheng.html">
+            教程<sup>3</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/bi-xue-gong-ju.html">
+            必学工具<sup>2</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/spring.html">
+            Spring<sup>1</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/java.html">
+            Java<sup>3</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/shell.html">
+            Shell<sup>4</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/hou-duan.html">
+            后端<sup>7</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/xml.html">
+            XML<sup>2</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/maven.html">
+            Maven<sup>1</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/mysql.html">
+            MySQL<sup>1</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/shu-ju-ku.html">
+            数据库<sup>1</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/linux.html">
+            Linux<sup>4</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/css.html">
+            CSS<sup>1</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/html.html">
+            HTML<sup>1</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/js.html">
+            JS<sup>2</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/notes.html">
+            笔记<sup>9</sup>
+          </a><a style="font-size:1em;color:#d3d3d3"
+             href="tags/web.html">
+            前端<sup>6</sup>
+          </a>
+        </div>
+      </div>
+      <!-- 底部展示时间归档 -->
+      <div class="console-card history" onclick="heo.hideConsole()">
+        <div class="item-headline"><i class="fas fa-archive"></i><span></span></div>
+        <ul class="card-archive-list">
+          
+            <li class="card-archive-list-item">
+              <a class="card-archive-list-link" href="archives/2023/08.html"
+                 data-pjax-state="load"><span
+                      class="card-archive-list-date">
+                  八月 2023
+                </span>
+                <div class="card-archive-list-count-group"><span
+                        class="card-archive-list-count">2</span>
+                  <span class="card-archive-list-count-unit">篇</span>
+                </div>
+              </a>
+            </li>
+            <li class="card-archive-list-item">
+              <a class="card-archive-list-link" href="archives/2023/07.html"
+                 data-pjax-state="load"><span
+                      class="card-archive-list-date">
+                  七月 2023
+                </span>
+                <div class="card-archive-list-count-group"><span
+                        class="card-archive-list-count">34</span>
+                  <span class="card-archive-list-count-unit">篇</span>
+                </div>
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="console-card-group-reward">
+    <ul class="reward-all console-card">
+      <li class="reward-item"><a href="upload/wx.jpg"
+                                 rel="external nofollow noreferrer" target="_blank" draggable="false"><img
+              class=" entered loaded" alt="微信"
+              src="upload/wx.jpg"></a>
+        <div class="post-qr-code-desc">微信</div>
+      </li>
+      <li class="reward-item"><a href="upload/zfb.jpg"
+                                 rel="external nofollow noreferrer" target="_blank" draggable="false"><img
+              class=" entered loaded" alt="支付宝"
+              src="upload/zfb.jpg"></a>
+        <div class="post-qr-code-desc">支付宝</div>
+      </li>
+    </ul>
+  </div>
+  <div class="button-group">
+    <div class="console-btn-item">
+      <!-- 用到了 rightmenu.js 的功能，还需要调整 -->
+      <a class="darkmode_switchbutton" href="javascript:void(0);" onclick="navFn.switchDarkMode();" rel="external nofollow"
+         title="显示模式切换"><i class="iconfont icon-moon" style="font-size:1rem"></i>
+      </a>
+    </div>
+    <div class="console-btn-item" id="consoleHideAside" onclick="heo.hideAsideBtn()" title="边栏显示控制"><a
+            class="asideSwitch" data-pjax-state=""><i class="haofont hao-icon-arrows-left-right"></i></a></div>
+    <div class="console-btn-item on" id="consoleCommentBarrage" onclick="heo.switchCommentBarrage()" title="热评开关"><a
+            class="commentBarrage" data-pjax-state=""><i class="haofont hao-icon-message"></i></a></div>
+
+    <!--<div class="console-btn-item" id="consoleKeyboard" onclick="heo.keyboardToggle()" title="快捷键开关"><a-->
+    <!--        class="keyboard-switch"><i class="fa-duotone fa-keyboard"></i></a>-->
+    <!--</div>-->
+    <!--<div class="console-btn-item" id="assist-open" onclick="heo.hideConsole()" title="无障碍工具栏"><a-->
+    <!--        class="assist-btn"><i class="fa-duotone fa-wheelchair"></i></a>-->
+    <!--</div>-->
+    <div class="console-btn-item" id="consoleMusic" onclick="heo.musicToggle()" title="音乐开关">
+      <a class="music-switch" data-pjax-state="">
+        <i class="haofont hao-icon-music"></i>
+      </a>
+    </div>
+    
+  </div>
+  <div class="console-mask" href="javascript:void(0);" onclick="heo.hideConsole()" rel="external nofollow">
+  </div>
+
+  <!-- 最近评论 -->
+  
+<!-- 最近评论 -->
+    <script>
+    window.addEventListener('load', () => {
+        const changeContent = (content) => {
+            if (content === '') return content
+
+            content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[图片]') // replace image link
+            content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[链接]') // replace url
+            content = content.replace(/<pre><code>.*?<\/pre>/gi, '[代码]') // replace code
+            content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+            if (content.length > 150) {
+                content = content.substring(0, 150) + '...'
+            }
+            return content
+        }
+
+        const getComment = () => {
+            const runTwikoo = () => {
+                twikoo.getRecentComments({
+                    envId: "",
+                    region: '',
+                    pageSize: 6,
+                    includeReply: true
+                }).then(function (res) {
+                    const twikooArray = res.map(e => {
+                        return {
+                            'content': changeContent(e.comment),
+                            'avatar': e.avatar,
+                            'nick': e.nick,
+                            'url': e.url + '#' + e.id,
+                            'date': new Date(e.created).toISOString()
+                        }
+                    })
+
+                    saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10 / (60 * 24))
+                    generateHtml(twikooArray)
+                }).catch(function (err) {
+                    const $dom = document.querySelector('#card-newest-comments .aside-list')
+                    $dom.innerHTML = "无法获取评论，请确认相关配置是否正确"
+                })
+            }
+
+            if (typeof twikoo === 'object') {
+                runTwikoo()
+            } else {
+                getScript(GLOBAL_CONFIG.source.twikoo.js).then(runTwikoo)
+            }
+        }
+
+        const generateHtml = array => {
+            let result = ''
+
+            if (array.length) {
+                for (let i = 0; i < array.length; i++) {
+                    result += '<div class=\'aside-list-item\'>'
+
+                    if (true) {
+                        const name = 'src'
+                        result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick}</span></div></a>`
+                    }
+
+                    result += `<div class='content'>
+                <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+                <time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+                </div>`
+                }
+            } else {
+                result += '没有评论'
+            }
+
+            let $dom = document.querySelector('#card-newest-comments .aside-list')
+            $dom.innerHTML = result
+            window.lazyLoadInstance && window.lazyLoadInstance.update()
+            window.pjax && window.pjax.refresh($dom)
+        }
+
+        const newestCommentInit = () => {
+            if (document.querySelector('#card-newest-comments .aside-list')) {
+                const data = saveToLocal.get('twikoo-newest-comments')
+                if (data) {
+                    generateHtml(JSON.parse(data))
+                } else {
+                    getComment()
+                }
+            }
+        }
+
+        newestCommentInit()
+        document.addEventListener('pjax:complete', newestCommentInit)
+    })</script>
+
+
+</div>
+
+<div id="sidebar">
+
+    <div id="menu-mask"></div>
+    <div id="sidebar-menus">
+        <span class="sidebar-menu-item-title">功能</span>
+        <div class="sidebar-menu-item">
+            <a class="darkmode_switchbutton menu-child" href="javascript:void(0);" onclick="rm.switchDarkMode()"
+               rel="external nofollow" title="显示模式切换">
+                <i class="iconfont icon-moon" style="font-size: 0.9rem;"></i>
+                <span>显示模式</span>
+            </a>
+        </div>
+        
+            <div class="back-menu-list-groups">
+                <div class="back-menu-list-group">
+
+                    
+                        <!-- 菜单必须有子项才会展示 -->
+                        <div class="back-menu-list-title">网页</div>
+                        <div class="back-menu-list">
+                            
+                                
+                        </div>
+
+                    
+                </div>
+
+            </div>
+        
+        
+        <!-- <div class="menus_items">
+            <div class="menus_item">
+                <a class="site-page" href="javascript:void(0);" rel="external nofollow">
+                    <span>文章</span>
+                
+                </a>
+                <ul class="menus_item_child">
+                    <li>
+                        <a class="site-page child" href="/archives">
+                            <i class="iconfont icon-list-ul"></i>
+                            <span>文章归档</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="site-page child" href="/categories">
+                            <i class="iconfont icon-folder-open"></i>
+                            <span>全部分类</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="site-page child" href="/tags">
+                            <i class="iconfont icon-tags"></i>
+                            <span>全部标签</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <span class="sidebar-menu-item-title">标签</span>
+        <div class="card-widget card-tags card-archives card-webinfo card-allinfo">
+            <div class="item-headline"><i class="iconfont icon-tags"></i><span>标签</span></div>
+            <div class="card-tag-cloud">
+                <a style="font-size:14.3px;color:#d3d3d3" href="tags/docker.html"
+                   title="docker">
+                    <!-- 角标 -->
+                    docker<sup>1</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/shi-ci-wen-ji.html"
+                   title="诗词文集">
+                    <!-- 角标 -->
+                    诗词文集<sup>17</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/robocup.html"
+                   title="RoboCup">
+                    <!-- 角标 -->
+                    RoboCup<sup>2</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/jiao-cheng.html"
+                   title="教程">
+                    <!-- 角标 -->
+                    教程<sup>3</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/bi-xue-gong-ju.html"
+                   title="必学工具">
+                    <!-- 角标 -->
+                    必学工具<sup>2</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/spring.html"
+                   title="Spring">
+                    <!-- 角标 -->
+                    Spring<sup>1</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/java.html"
+                   title="Java">
+                    <!-- 角标 -->
+                    Java<sup>3</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/shell.html"
+                   title="Shell">
+                    <!-- 角标 -->
+                    Shell<sup>4</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/hou-duan.html"
+                   title="后端">
+                    <!-- 角标 -->
+                    后端<sup>7</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/xml.html"
+                   title="XML">
+                    <!-- 角标 -->
+                    XML<sup>2</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/maven.html"
+                   title="Maven">
+                    <!-- 角标 -->
+                    Maven<sup>1</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/mysql.html"
+                   title="MySQL">
+                    <!-- 角标 -->
+                    MySQL<sup>1</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/shu-ju-ku.html"
+                   title="数据库">
+                    <!-- 角标 -->
+                    数据库<sup>1</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/linux.html"
+                   title="Linux">
+                    <!-- 角标 -->
+                    Linux<sup>4</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/css.html"
+                   title="CSS">
+                    <!-- 角标 -->
+                    CSS<sup>1</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/html.html"
+                   title="HTML">
+                    <!-- 角标 -->
+                    HTML<sup>1</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/js.html"
+                   title="JS">
+                    <!-- 角标 -->
+                    JS<sup>2</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/notes.html"
+                   title="笔记">
+                    <!-- 角标 -->
+                    笔记<sup>9</sup>
+                </a><a style="font-size:14.3px;color:#d3d3d3" href="tags/web.html"
+                   title="前端">
+                    <!-- 角标 -->
+                    前端<sup>6</sup>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 左下角音乐 -->
+
+    <div class="needEndHide" id="nav-music" >
+    <a id="nav-music-hoverTips" onclick="heo.musicToggle()" accesskey="m">播放音乐</a>
+    <div id="console-music-bg"></div><meting-js id="577629235" server="netease" type="playlist" mutex="true"
+                                                preload="none" theme="var(--heo-main)" data-lrctype="0" order="random"></meting-js>
+
+</div>
+
+
+<!-- 内容 -->
+
+
+    <div class="page" id="body-wrap">
+
+        <!-- 头部导航栏 -->
+        <header class="not-top-img" id="page-header">
+            <nav class="show" id="nav">
+    <div id="nav-group">
+
+        <!-- 导航栏左侧 -->
+        <div id="blog_name">
+
+    
+        <!-- 菜单栏左侧按钮，没有配置时，则不展示-->
+        <div class="back-home-button" tabindex="-1">
+
+            <i class="back-home-button-icon iconfont icon-grip-vertical" style="font-size: 1rem"></i>
+            <div class="back-menu-list-groups">
+                <div class="back-menu-list-group">
+                   
+                                
+                        </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    
+    <!-- 返回主页 -->
+    <!-- 这里可以指定使用什么作为图标，默认使用站点名称 -->
+    <a href="index.html" id="site-name" title="返回博客主页">
+        <span>余生岁月Life</span>
+    </a>
+</div>
+
+        <div id="page-name-mask">
+            <div id="page-name"><a id="page-name-text" onclick="btf.scrollToDest(0,500)">余生岁月Life</a></div>
+        </div>
+
+        <!-- 导航栏中间 -->
+        <div id="menus">
+
+    <div class="menus_items">
+
+
+            <!--递归调用-->
+            
+    
+
+        <!-- 导航栏右侧 -->
+        <div id="nav-right">
+
+    <!-- 功能都需要添加开关 -->
+
+    <!-- 切换模式 -->
+    <div class="nav-button">
+        <a class="console_switchbutton" href="javascript:void(0);"  onclick="navFn.switchDarkMode();" rel="external nofollow"
+           title="切换模式 - 日夜交替，黑白互换。">
+            <i class="haofont hao-icon-circle-half-stroke" style="font-size: 1rem; font-weight: 700;"></i>
+        </a>
+    </div>
+
+    <!-- 搜索使用搜索插件 -->
+   
+    </div>
+</nav>
+        </header>
+        <main class="layout hide-aside" id="content-inner">
+            <div id="page">
+
+                <div id="about-page">
+
+
+                    <div class="author-info">
+                        <div class="author-tag-left">
+                            <span class="author-tag">🤖️ 数码科技爱好者</span><span class="author-tag">🔍 分享与热心帮助</span><span class="author-tag">🔨 啥都会一点点</span>
+                        </div>
+                        <div class="author-img">
+                            <img
+                                    src="upload/touxiang.jpg">
+                        </div>
+                        <div class="author-tag-right">
+                            <span class="author-tag">喜欢一切新奇 🤝</span><span class="author-tag">脚踏实地行动派 🏃</span><span class="author-tag">少说话多做事 💢</span>
+                        </div>
+                    </div>
+                    <div class="author-title">关于我</div>
+
+
+                    
+
+    
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 我的介绍&我的想法 -->
+<div class="author-content">
+    <div class="author-content-item myInfoAndSayHello"><div class="title1">你好，很高兴认识你👋</div> <div class="title2">我叫 <span class="inline-word">余生岁月Life</span></div> <div class="title1">是一名 <strong style="background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);">在校大学生</strong> <strong style="background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);">爱狗男孩</strong><br><strong style="background-color: #3EECAC;
+background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);">互联网搬运工</strong> <strong style="background-color: #FBDA61;
+background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);">有求必应人</strong> <strong style="background-color: #F4D03F;
+background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);">博主</strong></div></div>
+    <div class="aboutsiteTips author-content-item"><div class="author-content-item-tips" style="color:blue;font-size:20px;">去追逐</div>
+<h2 style="width: 100%;">
+<span class="inline-word">热爱</span><br>
+<span class="inline-word" style="color:red;">源于</span>
+<div class="mask">
+<span class="first-tips inline-word" data-show="">感受每一个瞬间</span>
+<span class="inline-word">珍惜每一段旅程</span>
+<span class="inline-word">享受每一次失败</span>
+<span class="inline-word" data-up="">登上每一座山巅</span>
+</div>
+</h2></div>
+    <script>
+        var pursuitInterval = null;
+        pursuitInterval = setInterval(function () {
+            const show = document.querySelector('span[data-show]')
+            const next = show.nextElementSibling || document.querySelector('.first-tips')
+            const up = document.querySelector('span[data-up]')
+            if (up) {
+                up.removeAttribute('data-up')
+            }
+            show.removeAttribute('data-show')
+            show.setAttribute('data-up', '')
+            next.setAttribute('data-show', '')
+        }, 2000)
+    
+        document.addEventListener('pjax:send', function () {
+            clearInterval(pursuitInterval);
+        });
+    </script>
+</div>
+
+
+<!-- Mirrored from /about by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Aug 2023 12:50:39 GMT -->
+</html>
+
+            
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 我的介绍&我的想法 -->
+<div class="hello-about">
+    <div class="cursor" style="translate: none; rotate: none; scale: none; transform: translate(721px,180px);"></div>
+    <div class="shapes">
+        <div class="shape shape-1"
+            style="translate: none; rotate: none; scale: none; transform: translate(721px,180px);">
+        </div>
+        <div class="shape shape-2"
+            style="translate: none; rotate: none; scale: none; transform: translate(721px,180px);">
+        </div>
+        <div class="shape shape-3"
+            style="translate: none; rotate: none; scale: none; transform: translate(721px,180px);">
+        </div>
+    </div>
+    <div class="content">
+        <h1>余生岁月</h1>
+    </div>
+    <script src="../lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        .hello-about {
+            margin: 20px auto 0;
+            width: 100%;
+            border-radius: 24px;
+            background: var(--heo-card-bg);
+            border: var(--style-border-always);
+            box-shadow: var(--heo-shadow-border);
+            position: relative;
+            overflow: hidden;
+            user-select: none;
+        }
+
+        .shapes {
+            position: relative;
+            height: 315px;
+            width: 100%;
+            background: #2128bd;
+            overflow: hidden;
+        }
+
+        .shape {
+            will-change: transform;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape.shape-1 {
+            background: #005ffe;
+            width: 650px;
+            height: 650px;
+            margin: -325px 0 0 -325px;
+        }
+
+        .shape.shape-2 {
+            background: #ffe5e3;
+            width: 440px;
+            height: 440px;
+            margin: -220px 0 0 -220px;
+        }
+
+        .shape.shape-3 {
+            background: #ffcc57;
+            width: 270px;
+            height: 270px;
+            margin: -135px 0 0 -135px;
+        }
+
+        .hello-about .content {
+            top: 0;
+            left: 0;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 315px;
+            width: 100%;
+            background: #fff;
+            mix-blend-mode: screen;
+        }
+
+        [data-theme="dark"] .hello-about .content {
+            background: transparent;
+        }
+
+        [data-theme="dark"] .hello-about h1 {
+            color: var(--heo-white);
+        }
+
+        .hello-about h1 {
+            font-size: 200px;
+            color: #000;
+            margin: 0;
+            text-align: center;
+            font: inherit;
+            vertical-align: baseline;
+            line-height: 1;
+            font-size: calc((0.0989119683 * 100vw + (58.5558852621px)));
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (min-width: 419px) {
+            .hello-about h1 {
+                font-size: calc((0.0989119683 * 100vw + (58.5558852621px)));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hello-about {
+                margin:20px 0 auto
+            }
+        }
+
+        .cursor {
+            position: absolute;
+            background: #2128bd;
+            width: 20px;
+            height: 20px;
+            margin: -10px 0 0 -10px;
+            border-radius: 50%;
+            will-change: transform;
+            user-select: none;
+            pointer-events: none;
+            z-index: 3;
+        }
+
+        ::selection {
+            color: #fff;
+            background: #2128bd;
+        }
+    </style>
+    <script>
+        (() => {
+            const helloAboutEl = document.querySelector(".hello-about");
+            helloAboutEl.addEventListener("mousemove", evt => {
+                const mouseX = evt.offsetX;
+                const mouseY = evt.offsetY;
+                gsap.set(".cursor", {
+                    x: mouseX,
+                    y: mouseY,
+                });
+
+                gsap.to(".shape", {
+                    x: mouseX,
+                    y: mouseY,
+                    stagger: -0.1,
+                });
+            });
+        })();
+    </script>
+
+</div>
+
+</html>
+            
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 数据统计&音乐偏好 -->
+<div class="author-content">
+    <div class="about-statistic author-content-item"
+         style="background: url(https://bu.dusays.com/2023/03/12/640dc8c72f623.webp);">
+        <div class="card-content">
+            <div class="author-content-item-tips">余岁</div>
+            <span class="author-content-item-title">新年愿望</span>
+            <div id="statistic"></div>
+            <div class="post-tips">我希望许过的愿望一路生花 </a></div>
+
+        </div>
+    </div>
+
+
+    <div class="author-content-item-group column mapAndInfo">
+        <div class="author-content-item map single" style="padding: 0;">
+            <div id="mapContainer" style="height: 100%;"></div>
+            <span class="map-title">我现在住在
+                <b>贵州 · 贵阳</b></span>
+        </div>
+        <div class="author-content-item selfInfo single">
+            <div><span class="selfInfo-title">生于</span><span class="selfInfo-content"
+                                                                                                                                      id="selfInfo-content-year" style="color:#14f5f1">2002</span>
+            </div>
+            <div><span class="selfInfo-title">专业</span><span class="selfInfo-content"
+                                                                                                                                              style="color:#80ff00">审计学</span>
+            </div>
+            <div><span class="selfInfo-title">目前</span><span class="selfInfo-content"
+                                                                                                                                          style="color:#ff0000">大四在读</span>
+            </div>
+        </div>
+    </div>
+    <style>
+        .author-content-item.map {
+            background: none !important;
+            min-height: 160px;
+            max-height: 400px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+            height: 60%;
+            background-size: 100%;
+            transition: 1s ease-in-out;
+        }
+
+        [data-theme=dark] .author-content-item.map {
+            background: none !important;
+            background-size: 100%;
+        }
+    </style>
+    <script>
+        // 链接替换即可，不需要后面的参数
+        fetch("../v6-widget.51.la/v6/3FNhDrLFRiuNW0IB/quote.js")
+            .then(res => res.text())
+            .then(data => {
+                let title = ["最近活跃", "今日人数", "今日访问", "昨日人数", "昨日访问", "本月访问", "总访问量"];
+                // let num = data.match(/(?<=<\/span><span>).*?(?=<\/span><\/p>)/g)
+                let num = data.match(/(<\/span><span>).*?(\/span><\/p>)/g);
+
+                num = num.map(el => {
+                    let val = el.replace(/(<\/span><span>)/g, "");
+                    let str = val.replace(/(<\/span><\/p>)/g, "");
+                    return str;
+                });
+
+                let statisticEl = document.getElementById("statistic");
+
+                // 自定义不显示哪个或者显示哪个，如下为不显示 最近活跃访客 和 总访问量
+                let statistic = [];
+                for (let i = 0; i < num.length; i++) {
+                    if (!statisticEl) return;
+                    if (i == 0) continue;
+                    statisticEl.innerHTML +=
+                        "<div><span>" + title[i] + "</span><span id=" + title[i] + ">" + num[i] + "</span></div>";
+                    queueMicrotask(() => {
+                        statistic.push(
+                            new CountUp(title[i], 0, num[i], 0, 2, {
+                                useEasing: true,
+                                useGrouping: true,
+                                separator: ",",
+                                decimal: ".",
+                                prefix: "",
+                                suffix: "",
+                            })
+                        );
+                    });
+                }
+
+                let statisticElement = document.querySelector(".about-statistic.author-content-item");
+                function statisticUP() {
+                    if (!statisticElement) return;
+
+                    const callback = (entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                for (let i = 0; i < num.length; i++) {
+                                    if (i == 0) continue;
+                                    queueMicrotask(() => {
+                                        statistic[i - 1].start();
+                                    });
+                                }
+                                observer.disconnect(); // 停止观察元素，因为不再需要触发此回调
+                            }
+                        });
+                    };
+
+                    const options = {
+                        root: null,
+                        rootMargin: "0px",
+                        threshold: 0
+                    };
+                    const observer = new IntersectionObserver(callback, options);
+                    observer.observe(statisticElement);
+                }
+                statisticUP()
+            });
+    </script>
+    <script defer>
+        var t = new TMap.LatLng(26.646629,106.628239)//地图坐标//
+            , n = new TMap.Map(document.getElementById("mapContainer"), {
+            center: t,
+            zoom: 12,
+        });
+        n.removeControl(TMap.constants.DEFAULT_CONTROL_ID.ZOOM),
+            n.removeControl(TMap.constants.DEFAULT_CONTROL_ID.ROTATION),
+            n.removeControl(TMap.constants.DEFAULT_CONTROL_ID.SCALE),
+            new TMap.MultiMarker({
+                map: n,
+                styles: {
+                    marker: new TMap.MarkerStyle({
+                        width: 20,
+                        height: 30,
+                        anchor: {
+                            x: 10,
+                            y: 30
+                        }
+                    })
+                },
+                geometries: [{
+                    id: "marker",
+                    position: t
+                }]
+            })
+
+        // 去除logo及水印
+        var a = document.querySelector('canvas+div:last-child')
+        a.style.display = 'none'
+    </script>
+</div>
+
+</html>
+            
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 技能&职业生涯 -->
+<div class="author-content">
+
+    <div class="author-content-item skills">
+        <div class="card-content">
+            <div class="author-content-item-tips">技能</div>
+            <span class="author-content-item-title">开启创造力</span>
+            <div class="skills-style-group">
+                <div class="tags-group-all">
+                    <div class="tags-group-wrapper">
+                        <div class="tags-group-all">
+                            <!--  banners 使用默认值-->
+                            
+
+                            <!--  banners 使用默认值-->
+                            <div class="tags-group-wrapper">
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/gradle.png"
+                                                 title="Gradle">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/java.png"
+                                                 title="Java">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#fbff00">
+                                            <img src="themes/theme-hao/assets/images/icons/CSS3.png"
+                                                 title="CSS">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/spring.png"
+                                                 title="Spring">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#08dbf7">
+                                            <img src="themes/theme-hao/assets/images/icons/Docker.png"
+                                                 title="Docker">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffdd00">
+                                            <img src="upload/JavaScript.png"
+                                                 title="JavaScript">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#f53d3d">
+                                            <img src="themes/theme-hao/assets/images/icons/Git.webp"
+                                                 title="Git">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#f21c1c">
+                                            <img src="themes/theme-hao/assets/images/icons/HTML.png"
+                                                 title="HTML">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="https://pinia.vuejs.org/logo.svg"
+                                                 title="Pinia">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/TS.png"
+                                                 title="TypeScript">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#ee6868">
+                                            <img src="themes/theme-hao/assets/images/icons/Apifox.webp"
+                                                 title="Apifox">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/mysql.png"
+                                                 title="MySQL">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#f5f5f5">
+                                            <img src="upload/redis.png"
+                                                 title="Redis">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/rabbitMQ.png"
+                                                 title="RabbitMQ">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/ElasticSearch.png"
+                                                 title="ElasticSearch">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/SpringCloud.png"
+                                                 title="SpringCloud">
+                                        </div>
+                                    </div>
+                                
+                                    
+                                
+                                    <div class="tags-group-icon-pair">
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/maven.png"
+                                                 title="Maven">
+                                        </div>
+
+                                        <div class="tags-group-icon"
+                                             style="background:#ffffff">
+                                            <img src="upload/gradle.png"
+                                                 title="Gradle">
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  banners 使用默认值-->
+                
+                <div class="skills-list">
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/java.png" title="Java">
+                            </div>
+                            <div class="skill-name">
+                                <span>Java</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#fbff00">
+                                <img src="themes/theme-hao/assets/images/icons/CSS3.png" title="CSS">
+                            </div>
+                            <div class="skill-name">
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/spring.png" title="Spring">
+                            </div>
+                            <div class="skill-name">
+                                <span>Spring</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#08dbf7">
+                                <img src="themes/theme-hao/assets/images/icons/Docker.png" title="Docker">
+                            </div>
+                            <div class="skill-name">
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffdd00">
+                                <img src="upload/JavaScript.png" title="JavaScript">
+                            </div>
+                            <div class="skill-name">
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#f53d3d">
+                                <img src="themes/theme-hao/assets/images/icons/Git.webp" title="Git">
+                            </div>
+                            <div class="skill-name">
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#f21c1c">
+                                <img src="themes/theme-hao/assets/images/icons/HTML.png" title="HTML">
+                            </div>
+                            <div class="skill-name">
+                                <span>HTML</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/Vue.png" title="Vue">
+                            </div>
+                            <div class="skill-name">
+                                <span>Vue</span>
+                            </div>
+                        </div>
+                    
+
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="https://pinia.vuejs.org/logo.svg" title="Pinia">
+                            </div>
+                            <div class="skill-name">
+                                <span>Pinia</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/TS.png" title="TypeScript">
+                            </div>
+                            <div class="skill-name">
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ee6868">
+                                <img src="themes/theme-hao/assets/images/icons/Apifox.webp" title="Apifox">
+                            </div>
+                            <div class="skill-name">
+                                <span>Apifox</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/mysql.png" title="MySQL">
+                            </div>
+                            <div class="skill-name">
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#f5f5f5">
+                                <img src="upload/redis.png" title="Redis">
+                            </div>
+                            <div class="skill-name">
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/rabbitMQ.png" title="RabbitMQ">
+                            </div>
+                            <div class="skill-name">
+                                <span>RabbitMQ</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/ElasticSearch.png" title="ElasticSearch">
+                            </div>
+                            <div class="skill-name">
+                                <span>ElasticSearch</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/SpringCloud.png" title="SpringCloud">
+                            </div>
+                            <div class="skill-name">
+                                <span>SpringCloud</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/maven.png" title="Maven">
+                            </div>
+                            <div class="skill-name">
+                                <span>Maven</span>
+                            </div>
+                        </div>
+                    
+                        <div class="skill-info">
+                            <div class="skill-icon" style="background:#ffffff">
+                                <img src="upload/gradle.png" title="Gradle">
+                            </div>
+                            <div class="skill-name">
+                                <span>Gradle</span>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="author-content-item careers">
+        <div class="card-content">
+            <div class="author-content-item-tips">未来</div>
+            <span class="author-content-item-title">佛系上升</span>
+            <div class="careers-group">
+                <div class="careers-item">
+                    <div class="circle" style="background:#107dfe"></div>
+                    <div class="name">为了你，我可以什么都学一点。</div>
+                </div>
+            </div>
+            <img alt="生涯" class="author-content-img"
+                 src="upload/aboutprogressbar.png">
+        </div>
+    </div>
+</div>
+
+</html>
+
+            
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 性格&图片 -->
+
+<!-- personalities -->
+<div class="author-content">
+    <div class="author-content-item personalities">
+        <div class="author-content-item-tips">性格</div>
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <span class="author-content-item-title">守卫者</span>
+            <div class="title2" style="color: #1dfc94;">ISFJ</div>
+            <div class="image"><img src="themes/theme-hao/assets/images/isfj.png" style="transform: rotateY(180deg);">
+            </div>
+            <div class="post-tips">在 <a href="https://www.16personalities.com/" rel="noopener nofollow"
+                    target="_blank">16personalities</a>
+                了解更多关于 <a rel="noopener external nofollow" target="_blank"
+                    href="https://www.16personalities.com/ch/isfj-%E4%BA%BA%E6%A0%BC">鉴赏家</a>
+            </div>
+        
+
+        
+
+        
+
+    </div>
+    <div class="author-content-item myphoto"><img alt="自拍" class="author-content-img"
+            src="upload/asoul.png">
+    </div>
+</div>
+
+</html>
+            
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 座右铭 -->
+<!-- motto -->
+<div class="author-content">
+    <div class="author-content-item maxim">
+        <div class="author-content-item-tips">信念</div>
+        <span class="maxim-title">
+            <span style="opacity: 0.6;margin-bottom:8px;">行则将至，</span>
+            <span>做则必成。</span>
+        </span>
+    </div>
+
+    <div class="author-content-item buff">
+        <div class="card-content">
+            <div class="author-content-item-tips">YU生岁月</div>
+            <span class="buff-title">
+                <span style="opacity: 0.6;margin-bottom:8px;">我宁愿所有痛苦都留在心里，</span>
+                <span>也不愿忘记你的眼睛。</span>
+            </span>
+        </div>
+    </div>
+</div>
+
+</html>
+
+            
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 爱好 -->
+<div class="author-content">
+    <div class="author-content-item game-lol"
+        style="background: url(../upload-bbs.miyoushe.com/upload/2023/06/06/288909601/c3974ea5cbd0d6c57b6ce718a5841115_125091874222861541471ef.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png) top / cover no-repeat">
+        <div class="card-content">
+            <div class="author-content-item-tips">爱好游戏</div><span class="author-content-item-title">原神</span>
+            <div class="content-bottom">
+                <div class="icon-group">
+                    <div class="loading-bar" role="presentation" aria-hidden="true"></div>
+                </div>
+                <div class="tips">UID:我忘了</div>
+            </div>
+        </div>
+    </div>
+    <div class="author-content-item game-wolf"
+        style="background: url(../game.gtimg.cn/images/yxzj/img201606/skin/hero-info/146/146-bigskin-4.jpg) top / cover no-repeat">
+        <div class="card-content">
+            <div class="author-content-item-tips">爱好游戏</div><span class="author-content-item-title">王者荣耀</span>
+            <div class="content-bottom">
+                <div class="tips">ID:余生岁月Life</div>
+            </div>
+        </div>
+    </div>
+    
+    <style>
+        .loading-bar::after {
+            content: "";
+            position: absolute;
+            top: 500px;
+            left: 0;
+            filter: drop-shadow(0 -500px 0 #ece5d8);
+            width: 500px;
+            height: 62.5px;
+            background: url(../yuanshen.site/imgs/loading-bar.png) no-repeat left 100%;
+            background-size: 500px 62.5px;
+            background-position-x: 0;
+        }
+    </style>
+</div>
+
+</html>
+
+            
+        
+            
+                <!DOCTYPE html>
+<html lang="en">
+<!-- 关注偏好&音乐偏好 -->
+<div class="author-content">
+
+    <div class="author-content-item like-technology"
+        style="background: url(https://img.zhheo.com/i/2022/08/31/630efac3ecef3.webp) top / cover no-repeat;">
+        <div class="card-content">
+            <div class="author-content-item-tips">关注偏好</div>
+            <span class="author-content-item-title">数码科技</span>
+            <div class="content-bottom">
+                <div class="tips">手机、电脑软硬件</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="author-content-item like-music"
+         style="background: url(../upload-bbs.miyoushe.com/upload/2023/06/06/288909601/935B8EF0F34364EDD855E2B78D66403D.png?x-oss-process=image//resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png) top / cover no-repeat">
+        <div class="card-content">
+            <div class="author-content-item-tips">音乐偏好</div>
+            <span class="author-content-item-title">蹦迪、流行</span>
+            <div class="content-bottom">
+                <div class="tips">跟 余生岁月Life 一起欣赏更多音乐</div>
+            </div>
+            <!-- <div class="banner-button-group"><a class="banner-button"
+                onclick="pjax.loadUrl('/music')"
+                   target="_blank"
+                    rel="noopener nofollow">
+                    <i class="haofont hao-icon-arrow-circle-right"></i>
+                    <span class="banner-button-text">更多推荐</span></a>
+            </div> -->
+        </div>
+    </div>
+
+</div>
+</html>
+
+            
+        
+    
+
+
+
+
+                </div>
+
+
+                <div class="author-content">
+                    <div class="create-site-post author-content-item single"><div class="author-content-item-tips">关于</div> <span class="author-content-item-title">我认为的遇见是什么？</span> <br>这短短的一生，我们生于四季，来于人海，在各自的人生道路上前行，或高昂、或低沉。在一次次的主动与期盼之中，才能有幸出演彼此的人生片段。
+                    人的一生，遗憾是要远远多于感动的。遗憾来源于彼此，感动也是如此，我们于茫茫人海中认识，从陌生到熟悉、从冷漠到热情。这一切是多么的顺其自然而又无法预知。
+                    感谢相遇，在千万种结果之中，相遇带来了相识的机会，从相识出发，我们互相了解，选择了彼此，从好奇期盼到深知熟悉，有了更加亲密的关系。从形单影只到伴影而行，从寥寥几句到无话不谈……
+                    每一份相遇，都如日月星辰，许在心上，刻在光阴里。我们曾有着“生而无畏战至终章”的勇气、也曾想过“山川湖海热泪盈眶”的余生。
+                    有的相遇是直达余生，而有的相遇却只能为人生增添几分颜色。
+                    当热情退却，没有了过往的好奇期盼，离别或许就在所难免。
+                    离别总是痛苦的，它带着大大小小的遗憾，也带着复杂的情感。最难过的离别感受是在夜里那些过往突然涌上心头，彻夜难眠;是清晨醒来红肿不清的眼是没有动力拥抱今天的颓废。
+                    而离别的痛苦来源于相遇时的无限期盼，因为投下了太多的希望或者是精力，使得彼此印象深刻，短时间内难以忘怀。有着太多的回忆与细节，是深夜里的畅谈，是孤独时的陪伴，是尴尬时的化解，是快乐时的分享，是难过时的安慰，也是很多时候的首选与第一。
+                    我们在期盼中相遇，也会将在遗憾中离去，如果不能够坦荡大方的，那么就尝试在回忆中释怀，或许这是十分的痛苦与艰难，但以此得到的新生是彻底的。相遇与离去本事普普通通的事情，但当其被赋予情感后，便有了太多的牵挂不舍。
+                    离开时，也要告诉自己“感谢你特别邀请”。</p></div>
+                </div>
+
+
+
+            </div>
+
+            <!-- 评论模块 -->
+
+
+        </main>
+        <!-- 底部 -->
+        <footer id="footer">
+
+    
+    <!-- 底部 banner -->
+
+    <style>
+  .pl-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+  }
+</style>
+    <!--评论弹幕弹窗 -->
+    <div class="comment-barrage needEndHide"
+         style="display: none;"></div>
+
+
+</footer>
+    </div>
+
+
+
+<!-- todo 暂时没显示，是右下角悬浮操作按钮 -->
+<div id="rightside">
+    <div id="rightside-config-hide">
+        <button id="translateLink" title="简繁转换" type="button">简</button>
+        <button id="darkmode" title="浅色和深色模式转换" type="button"><i class="fas fa-adjust"></i></button>
+        <button id="hide-aside-btn" title="单栏和双栏切换" type="button"><i class="fas fa-arrows-alt-h"></i></button>
+    </div>
+    <div id="rightside-config-show">
+        <button id="rightside_config" title="设置" type="button"><i class="fas fa-cog fa-spin"></i></button>
+        <button id="go-up" title="回到顶部" type="button"><i class="fas fa-arrow-up"></i></button>
+    </div>
+</div>
+
+
+<div>
+    <script src="themes/theme-hao/assets/zhheo/rightmenu.js"></script>
+    <div id="rightMenu">
+        <div class="rightMenu-group rightMenu-small">
+            <div class="rightMenu-item" id="menu-backward"><i class="iconfont icon-arrow-left"></i></div>
+            <div class="rightMenu-item" id="menu-forward"><i class="iconfont icon-arrow-right"></i></div>
+            <div class="rightMenu-item" id="menu-refresh"><i class="iconfont icon-redo-alt"></i></div>
+            <div class="rightMenu-item" id="menu-top"><i class="iconfont icon-arrow-up"></i></div>
+        </div>
+        <div class="rightMenu-group rightMenu-line rightMenuPlugin">
+            <div class="rightMenu-item" id="menu-copytext">
+                <i class="iconfont icon-copy"></i>
+                <span>复制选中文本</span>
+            </div>
+            <div class="rightMenu-item" id="menu-pastetext">
+                <i class="iconfont icon-paste"></i>
+                <span>粘贴文本</span>
+            </div>
+            <a class="rightMenu-item" id="menu-commenttext">
+                <i class="iconfont icon-comment-dots1"></i>
+                <span>引用到评论</span>
+            </a>
+            <div class="rightMenu-item" id="menu-newwindow">
+                <i class="iconfont icon-window-restore"></i>
+                <span>新窗口打开</span>
+            </div>
+            <div class="rightMenu-item" id="menu-copylink">
+                <i class="iconfont icon-link"></i>
+                <span>复制链接地址</span>
+            </div>
+            <div class="rightMenu-item" id="menu-copyimg">
+                <i class="haofont hao-icon-images"></i>
+                <span>复制此图片</span>
+            </div>
+            <div class="rightMenu-item" id="menu-downloadimg">
+                <i class="haofont hao-icon-download"></i>
+                <span>下载此图片</span>
+            </div>
+            <div class="rightMenu-item" id="menu-search">
+                <i class="iconfont icon-search"></i>
+                <span>站内搜索</span>
+            </div>
+            <div class="rightMenu-item" id="menu-searchBaidu">
+                <i class="iconfont icon-baidu"></i>
+                <span>百度搜索</span>
+            </div>
+            <div class="rightMenu-item" id="menu-music-toggle" style="">
+                <i class="haofont hao-icon-play"></i>
+                <span>播放音乐</span>
+            </div>
+            <div class="rightMenu-item" id="menu-music-back" style="">
+                <i class="haofont hao-icon-backward"></i>
+                <span>切换到上一首</span>
+            </div>
+            <div class="rightMenu-item" id="menu-music-forward" style="">
+                <i class="haofont hao-icon-forward"></i>
+                <span>切换到下一首</span>
+            </div>
+            <div class="rightMenu-item" id="menu-music-copyMusicName" style="">
+                <i class="haofont hao-icon-copy"></i>
+                <span>复制歌名</span>
+            </div>
+        </div>
+        <div class="rightMenu-group rightMenu-line rightMenuOther">
+            <div class="rightMenu-item" id="menu-copy">
+                <i class="iconfont icon-link"></i>
+                <span>复制地址</span>
+            </div>
+            <div class="rightMenu-item" id="menu-darkmode">
+                <i class="haofont hao-icon-circle-half-stroke"></i>
+                <span class="menu-darkmode-text">显示模式</span>
+            </div>
+        </div>
+    </div>
+    <div id="rightmenu-mask"></div>
+    <script>
+        addRightMenuClickEvent();
+    </script>
+</div>
+
+<div>
+    <script src="themes/theme-hao/assets/js/utils101f.js?v=1.3.3"></script>
+    <script src="themes/theme-hao/assets/js/main101f.js?v=1.3.3"></script>
+    <script charset="utf-8" data-pjax src="themes/theme-hao/assets/zhheo/blogex101f.js?v=1.3.3"></script>
+
+    <!-- https://instant.page/ 网站预加载， 放在 </body> 之前 -->
+    <script src="../lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+
+    <script src="../lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script>
+
+    <!-- 右下角通知 https://www.polonel.com/snackbar/ -->
+    <!-- todo head 中有它的 css，应该可以写一块，并改成后台可配置的功能，代码中应该还有他的 js -->
+    <script src="../lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/node-snackbar/0.1.16/snackbar.min.js"></script>
+
+    <!-- 深色模式下添加粒子效果canvas -->
+    <canvas id="universe" width="1312" height="880"></canvas>
+    <script async="" src="themes/theme-hao/assets/libs/canvas/dark101f.js?v=1.3.3"></script>
+
+    <!-- https://davidshimjs.github.io/qrcodejs/ 生成二维码 -->
+    <!-- 应该是文章页分享使用 -->
+    <script data-pjax src="../lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+    <!--  https://raphamorim.io/waterfall.js/  应该是这个 还有相关的 js 代码 是否可以调整-->
+    <script src="themes/theme-hao/assets/libs/waterfall/waterfall.min101f.js?v=1.3.3"></script>
+
+    <!-- 获取主色 https://lokeshdhakar.com/projects/color-thief/ -->
+    <!--<script th:src="@{/assets/libs/color-thief/color-thief.umd.js}"></script>-->
+    <script src="themes/theme-hao/assets/libs/fast-average-color/index.browser.min101f.js?v=1.3.3"></script>
+
+    <script src="themes/theme-hao/assets/libs/view-image/view-image.min101f.js?v=1.3.3"></script>
+
+    <!--左下角音乐-->
+    <script>var meting_api = 'https://api.i-meto.com/meting/api?server=:server&amp;type=:type&amp;id=:id&amp;r=:r'; </script>
+
+    <link rel="stylesheet" href="../lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="all" onload="this.media='all'">
+
+    <script src="themes/theme-hao/assets/libs/aplayer/APlayer.min101f.js?v=1.3.3"></script>
+
+    <script src="themes/theme-hao/assets/libs/aplayer/Meting2.min101f.js?v=1.3.3"></script>
+
+    <script src="themes/theme-hao/assets/libs/pjax/pjax.min101f.js?v=1.3.3"></script>
+
+    <!-- swiper 在瞬间滚动时会使用 -->
+    <script data-pjax  src="../lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/Swiper/6.6.2/swiper-bundle.min.js"></script>
+
+    <!-- 评论弹幕 -->
+    <script  data-pjax=""
+             src="themes/theme-hao/assets/libs/twikoo/commentBarrage101f.js?v=1.3.3"></script>
+
+    <!-- Tocbot 目录生成 start -->
+    
+    <script src="themes/theme-hao/assets/libs/tocbot/4.18.2/tocbot.min101f.js?v=1.3.3"></script>
+    <link href="themes/theme-hao/assets/libs/tocbot/4.18.2/tocbot101f.css?v=1.3.3" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded",  function() {
+
+            const postContent = document.querySelector('.post-content');
+
+            if (postContent == null) return;
+
+            const headers = postContent.querySelectorAll('h1,h2,h3,h4,h5,h6');
+            // 没有 toc 目录，则直接移除
+            if (headers.length === 0) {
+                document.getElementById("card-toc").remove();
+            } else {
+                tocbot.init({
+                    tocSelector: '.toc-content',
+                    contentSelector: '.post-content',
+                    headingSelector: 'h1,h2,h3,h4,h5,h6',
+                    hasInnerContainers: true
+                });
+
+            }
+        })
+        document.addEventListener('pjax:complete', function () {
+
+            const postContent = document.querySelector('.post-content');
+
+            if (postContent == null) return;
+
+            const headers = postContent.querySelectorAll('h1,h2,h3,h4,h5,h6');
+            // 没有 toc 目录，则直接移除
+            if (headers.length === 0) {
+                document.getElementById("card-toc").remove();
+            } else {
+                tocbot.init({
+                    tocSelector: '.toc-content',
+                    contentSelector: '.post-content',
+                    headingSelector: 'h1,h2,h3,h4,h5,h6',
+                    hasInnerContainers: true
+                });
+
+            }
+        })
+    </script>
+
+
+    <!-- 51统计 -->
+    
+    <script>
+        !function (p) {
+            "use strict";
+            !function (t) {
+                var s = window
+                    , e = document
+                    , i = p
+                    , c = "".concat("https:" === e.location.protocol ? "https://" : "http://", "sdk.51.la/js-sdk-pro.min.html")
+                    , n = e.createElement("script")
+                    , r = e.getElementsByTagName("script")[0];
+                n.type = "text/javascript",
+                    n.setAttribute("charset", "UTF-8"),
+                    n.async = !0,
+                    n.src = c,
+                    n.id = "LA_COLLECT",
+                    i.d = n;
+                var o = function () {
+                    s.LA.ids.push(i)
+                };
+                s.LA ? s.LA.ids && o() : (s.LA = p,
+                    s.LA.ids = [],
+                    o()),
+                    r.parentNode.insertBefore(n, r)
+            }()
+        }({
+            id: "3FNhDrLFRiuNW0IB",
+            ck: "3FNhDrLFRiuNW0IB",
+            hashMode: true
+        });
+    </script>
+
+
+    <!-- 动态标题 -->
+    <script>
+    let leaveTitle = '再看看嘛！';
+    let backTitle = '欢迎回来！';
+    let OriginTitile = document.title
+    let titleTime
+    document.addEventListener('visibilitychange', function () {
+        if (document.hidden) {
+            //离开当前页面时标签显示内容
+            document.title = leaveTitle
+            clearTimeout(titleTime)
+        } else {
+            //返回当前页面时标签显示内容
+            document.title = backTitle + OriginTitile
+            //两秒后变回正常标题
+            titleTime = setTimeout(function () {
+                document.title = OriginTitile
+            }, 2000)
+        }
+    })
+</script>
+
+    <!--官方评论插件js-->
+    <script src="plugins/PluginCommentWidget/assets/static/comment-widget.iife.js"></script>
+
+    <div id="js-pjax"></div>
+
+    <script src="themes/theme-hao/assets/libs/twikoo/easy-Danmaku101f.js?v=1.3.3" id="Danmaku"></script>
+
+
+    <script>
+        let pjaxSelectors = ['title', '#config-diff', '#body-wrap', '#rightside-config-hide', '#rightside-config-show', '.js-pjax','#site-config']
+
+        if (false) {
+            pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+        }
+
+        var pjax = new Pjax({
+            elements: 'a:not([target="_blank"])',
+            selectors: pjaxSelectors,
+            cacheBust: false,
+            analytics: false,
+            scrollRestoration: false
+        })
+
+        document.addEventListener('pjax:send', function () {
+
+            // removeEventListener toc scroll
+            window.removeEventListener('scroll', window.tocScrollFn)
+
+            typeof preloader === 'object' && preloader.initLoading()
+
+            if (window.aplayers) {
+                for (let i = 0; i < window.aplayers.length; i++) {
+                    if (!window.aplayers[i].options.fixed) {
+                        window.aplayers[i].destroy()
+                    }
+                }
+            }
+
+            typeof typed === 'object' && typed.destroy()
+
+            //reset readmode
+            const $bodyClassList = document.body.classList
+            $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+        })
+
+        document.addEventListener('pjax:complete', function () {
+            window.refreshFn()
+
+            document.querySelectorAll('script[data-pjax]').forEach(item => {
+                    const newScript = document.createElement('script')
+                    const content = item.text || item.textContent || item.innerHTML || ""
+                    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+                    newScript.appendChild(document.createTextNode(content))
+                    item.parentNode.replaceChild(newScript, item)
+                }
+            )
+
+            GLOBAL_CONFIG.lazyload.enable && window.lazyLoadInstance.update()
+
+            typeof chatBtnFn === 'function' && chatBtnFn()
+            typeof panguInit === 'function' && panguInit()
+
+            // google analytics
+            typeof gtag === 'function' && gtag('config', '', {
+                'page_path': window.location.pathname
+            });
+
+            // baidu analytics
+            typeof _hmt === 'object' && _hmt.push(['_trackPageview', window.location.pathname]);
+
+            typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+            // Analytics
+            if (false) {
+                MtaH5.pgv()
+            }
+
+            // prismjs
+            typeof Prism === 'object' && Prism.highlightAll()
+
+            typeof preloader === 'object' && preloader.endLoading()
+        })
+
+        document.addEventListener('pjax:error', (e) => {
+                if (e.request.status === 404 || e.request.status === 500) {
+                    window.location.href = e.request.responseURL;
+                }
+            }
+        )
+    </script>
+
+
+</div>
+
+<!-- 根据配置设置 css 变量值，全局 css 通过变量值进行处理 -->
+<style type="text/css">
+    [data-theme=light] {
+        --heo-theme: #425aef !important;
+        --heo-theme-op: #425aef23 !important;
+        --heo-theme-op-deep: #425aefdd !important;
+        --heo-theme-none: #425aef00 !important;
+    }
+
+    [data-theme=dark] {
+        --heo-theme: #f2b94b !important;
+        --heo-theme-op: #f2b94b23 !important;
+        --heo-theme-op-deep: #f2b94bdd !important;
+        --heo-theme-none: #f2b94b00 !important;
+
+    }
+</style>
+
+<script data-pjax="">
+
+    if (true) {
+        // 移除加载动画
+        removeLoading();
+    }
+    //页脚友联
+    if(GLOBAL_CONFIG.isFriendLinksInFooter){
+        heo.addFriendLinksInFooter()
+    }
+
+    //音乐页面切换歌曲调用
+    if(GLOBAL_CONFIG.isMusic){
+        heo.changeMusicBg(false);
+    }
+    //代码块
+    if(GLOBAL_CONFIG.prism.enable){
+        halo.addPrismTool()
+        halo.dataCodeTheme()
+    }
+    if(document.querySelector('#danmu') &&
+        document.body.clientWidth > 768 &&
+        true){
+        halo.closeCommentBarrage();
+        halo.addScript("Danmaku", "themes/theme-hao/assets/libs/twikoo/easy-Danmaku.js", halo.danmu("","76ad6c22297ef269193eeccf7252c028",20))
+    }
+
+</script>
+</body>
+
+</html>
