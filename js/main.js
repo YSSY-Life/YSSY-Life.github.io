@@ -51,7 +51,7 @@ window.addEventListener('load', function () {
             timeout: 2500,
             icon: false,
             title: hello,
-            message: '欢迎来到“余生岁月Life”'
+            message: '欢迎来到"余生岁月Life"'
         });
     }, 800);
 
@@ -265,7 +265,7 @@ window.addEventListener('load', function () {
             //移动端隐藏更多页面
             $('#container').attr('class', 'container');
             $("#change").html("Hello&nbsp;World&nbsp;!");
-            $("#change1").html("一个建立于 21 世纪的小站，存活于互联网的边缘");
+            $("#change1").html("余生岁月Life");
 
             //移动端隐藏弹窗页面
             $('#box').css("display", "none");
@@ -318,13 +318,7 @@ let styleContent = `
 color: rgb(30,152,255);
 `
 let title1 = '余生岁月Life'
-let title2 = `
- _____ __  __  _______     ____     __
-|_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
-  | | | \\  / | (___  \\ \\_/ /  \\ \\_/ / 
-  | | | |\\/| |\\___ \\  \\   /    \\   /  
- _| |_| |  | |____) |  | |      | |   
-|_____|_|  |_|_____/   |_|      |_|                                                     
+let title2 = `                                                     
 `
 console.log(`%c${title1} %c${title2}
 %c${content}`, styleTitle1, styleTitle2, styleContent)
